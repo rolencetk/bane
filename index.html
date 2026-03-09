@@ -93,6 +93,9 @@
             .sidebar { transform: translateX(100%); }
             .main-content { margin-right: 0; }
         }
+
+      .service-icon{ width: 60px; height: 60px; margin-bottom: 10px; }
+      
     </style>
 </head>
 <body>
@@ -132,11 +135,25 @@
     <h2 style="margin-bottom: 20px;">إدارة الطلبات</h2>
     <div class="services-grid">
      <div class="service-card">
+         <svg class="service-icon" viewbox="0 0 100 100"><defs>
+         <lineargradient id="accountingGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#0E4D7C;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#2473A9;stop-opacity:1" />
+         </lineargradient>
+        </defs> <rect x="20" y="30" width="60" height="40" rx="8" fill="none" stroke="url(#accountingGrad)" stroke-width="3" /> <circle cx="35" cy="45" r="4" fill="url(#accountingGrad)" /> <rect x="45" y="42" width="25" height="3" rx="1.5" fill="url(#accountingGrad)" /> <rect x="45" y="47" width="25" height="3" rx="1.5" fill="url(#accountingGrad)" /> <rect x="45" y="52" width="15" height="3" rx="1.5" fill="url(#accountingGrad)" opacity="0.6" />
+       </svg>
       <h3>المحــاسبـة</h3>
       <p>إدارة الحسابات والدفاتر المحاسبية</p>
       <button class="btn btn-primary" style="margin-top: 10px;">اطلب</button>
      </div>
      <div class="service-card">
+         <svg class="service-icon" viewbox="0 0 100 100"><defs>
+         <lineargradient id="financialGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style="stop-color:#E5CB4C;stop-opacity:1" />
+          <stop offset="100%" style="stop-color:#83610D;stop-opacity:1" />
+         </lineargradient>
+        </defs> <rect x="15" y="25" width="70" height="50" rx="8" fill="none" stroke="url(#financialGrad)" stroke-width="3" /> <rect x="25" y="35" width="15" height="12" rx="3" fill="url(#financialGrad)" /> <rect x="45" y="35" width="15" height="12" rx="3" fill="url(#financialGrad)" opacity="0.7" /> <rect x="65" y="35" width="15" height="12" rx="3" fill="url(#financialGrad)" opacity="0.4" /> <rect x="25" y="52" width="50" height="4" rx="2" fill="url(#financialGrad)" /> <rect x="25" y="60" width="35" height="4" rx="2" fill="url(#financialGrad)" opacity="0.6" />
+       </svg>
       <h3>المــاليـة</h3>
       <p>التقارير المالية والتحليل المالي</p>
       <button class="btn btn-primary" style="margin-top: 10px;">اطلب</button>
