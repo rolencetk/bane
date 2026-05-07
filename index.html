@@ -85,11 +85,38 @@
         }
 
         .btn {
-            padding: 10px 25px; border-radius: 8px; border: none; cursor: pointer;
-            font-weight: bold; transition: 0.3s;
-        }
-        .btn-primary { background: var(--gold); color: white; }
-        .btn-primary:hover { background: var(--primary); }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 12px 24px;
+    border: none;
+    border-radius: 50px;
+
+    background: linear-gradient(135deg, #26507D 0%, #3A6A9B 100%);
+    color: white;
+
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 12px rgba(38, 80, 125, 0.3);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(38, 80, 125, 0.4);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #26507D 0%, #3A6A9B 100%);
+}
+
+.btn-primary:hover {
+    background: linear-gradient(135deg, #1f4469 0%, #315d88 100%);
+}
 
         @media (max-width: 768px) {
             .sidebar { transform: translateX(100%); }
