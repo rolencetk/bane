@@ -50,7 +50,7 @@
             background: linear-gradient(135deg, var(--bg) 0%, #F1F1EA 100%);
             color: white; padding: 60px; border-radius: 20px; border: 1px solid var(--soft-blue); text-align: center; margin-bottom: 40px;
         }
-        .hero-section h1 { font-size: 32px; margin-bottom: 15px; font-weight: bold; background: linear-gradient(90deg, var(--gold), var(--primary));
+        .hero-section h1 { font-size: 32px; margin-bottom: 15px; font-weight: bold; background:linear-gradient(135deg,#0E4D7C,#2473A9,#E5CB4C);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent; }
     
@@ -70,11 +70,14 @@
     .stat-item h2 {
   font-size: 36px;
   font-weight: bold;
-  background: linear-gradient(90deg, var(--gold), #b08a2e, var(--primary));
+  background:linear-gradient(135deg,#0E4D7C,#2473A9,#E5CB4C);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-        .service-card:hover { transform: translateY(-5px); border-bottom: 4px solid var(--gold); }
+        .service-card:hover {
+  transform: translateY(-5px);
+  border-bottom: 4px solid var(--gold);
+}
 
         /* Forms */
         .contact-section { background: white; padding: 40px; border-radius: 20px; margin-top: 40px; }
@@ -124,6 +127,25 @@
         }
 
       .service-icon{ width: 60px; height: 60px; margin-bottom: 10px; }
+    
+    .section-title{
+  position:relative;
+  text-align:center;
+  font-weight:800;
+  margin-bottom:40px;
+}
+
+.section-title::after{
+  content:'';
+  width:80px;
+  height:4px;
+  border-radius:999px;
+  background:linear-gradient(135deg,#0E4D7C,#2473A9,#E5CB4C);
+  position:absolute;
+  bottom:-12px;
+  left:50%;
+  transform:translateX(-50%);
+}
       
     </style>
 </head>
@@ -155,16 +177,17 @@
    </section> 
 
       <section id="IS" style="margin-top: 50px;">
-    <h2 style="margin-bottom: 20px;">إحصــائياتنـا </h2>
+    <h2 class="section-title" style="margin-bottom:20px;">إحصــائياتنـا </h2>
    <div class="stats-grid">
       <div class="stat-item"><h2>58</h2><p>ولاية</p></div>
       <div class="stat-item"><h2>500+</h2><p>محاسب محترف</p></div>
       <div class="stat-item"><h2>1000+</h2><p>زبون راضٍ</p></div>
+     <div class="stat-item"><h2>7/24</h2><p>دعم متواصل</p></div>
    </div>
       </section>
 
       <section id="services" style="margin-top: 50px;">
-    <h2 style="margin-bottom: 20px;">خدماتنــا </h2>
+    <h2 class="section-title" style="margin-bottom:20px;">خدماتنــا</h2>
     <div class="services-grid">
      <div class="service-card"><h3>المحـاسبة المالية</h3><p>إدارة شاملة للحسابات المالية والدفاتر
 المحاسبية</p></div>
@@ -178,7 +201,7 @@
    </section>
 
    <section id="orders" style="margin-top: 50px;">
-    <h2 style="margin-bottom: 20px;">إدارة الطلبات</h2>
+    <h2 class="section-title" style="margin-bottom:20px;">إدارة الطلبات</h2>
     <div class="services-grid">
      <div class="service-card">
          <svg class="service-icon" viewbox="0 0 100 100"><defs>
@@ -208,7 +231,7 @@
    </section>
 
    <section id="reports" style="margin-top: 50px;">
-    <h2 style="margin-bottom: 20px;">التقارير والإحصائيات</h2>
+    <h2 class="section-title" style="margin-bottom:20px;">التقارير والإحصائيات</h2>
     <div class="services-grid">
      <div class="service-card"><h3>التقارير المالية</h3><p>وضع المشاريع المالي</p></div>
      <div class="service-card"><h3>تحليل الأداء</h3><p>تحليل الخدمات</p></div>
@@ -216,7 +239,7 @@
    </section>
 
    <section id="contact" class="contact-section">
-     <h2>تواصل معنا</h2>
+     <h2 class="section-title">تواصل معنا</h2>
      <form style="margin-top: 20px;">
       <div class="form-group"><label>الاسم الكامل</label><input type="text" placeholder="أدخل اسمك"></div>
       <div class="form-group"><label>البريد الإلكتروني</label><input type="email" placeholder="email@example.com"></div>
