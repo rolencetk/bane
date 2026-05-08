@@ -74,9 +74,14 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-        .service-card:hover {
-  transform: translateY(-5px);
-  border-bottom: 4px solid var(--gold);
+        .service-card{
+  transition:0.3s;
+  will-change:transform;
+}
+
+.service-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 20px 40px rgba(4,40,69,0.12);
 }
 
         /* Forms */
